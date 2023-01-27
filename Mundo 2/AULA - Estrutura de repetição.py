@@ -68,5 +68,5 @@ print('Fim')
 s = 0
 for c in range(0, 4):
     n = int(input('Digite um número')) ### Faz a soma dos numeros 4 vezes
-    s += n
+    s += n  # s = s + n
 print('O somatorio de todos os valores fois {}' .format(s))
