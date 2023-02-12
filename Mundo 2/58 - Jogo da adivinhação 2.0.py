@@ -8,3 +8,22 @@ while x != n:
     x = int(input('Você errou, Tente outro numero: '))
 print('Maquina {} '.format(n))
 print('Você {}' .format(x))
+
+
+
+######################################################
+
+from random import randint
+computador = randint(0, 10)
+print('Sou seu computador... acabei de pensar em um numero de 0 a 10.')
+print('Sera que você consegue advinhar qual foi? ')
+acertou = False
+while not acertou:
+    jogador = int(input('Qual seu palpite? '))
+    if jogador == computador
+        acertou = True
+print('Acertou!')
+
+
+
+
