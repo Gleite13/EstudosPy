@@ -1,3 +1,5 @@
+#Jogo de adivinhação, sortear um numero e acertar usando WHILE
+
 import random
 n = random.randint(1, 10)
 x = int(input('Digite um numero de 0 a 10 para começar o JOGO: '))
