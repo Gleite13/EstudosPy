@@ -1,11 +1,12 @@
 # Criando Menu de opções com exercicio utilizando While
 
 print('''Digite dois números''')
+n1 = float(input('Diga o primeiro número: '))
+n2 = float(input('Diga o segundo número: '))
+print('Menu de Opções: ')
 x = 0
 while x != 5:
-    n1 = float(input('Diga o primeiro número: '))
-    n2 = float(input('Diga o segundo número: '))
-    print('Menu de Opções: ')
+
     print('''[1] Somar
 [2] Multiplicar
 [3] Maior
@@ -24,7 +25,9 @@ while x != 5:
         else:
             print('Números iguais.')
     if x == 4:
-        print('Retornando ao menu...')
+        print('Informe os números novamente...')
+        n1 = float(input('Diga o primeiro número: '))
+        n2 = float(input('Diga o segundo número: '))
     if x == 5:
         print('Saindo do programa...')
 
