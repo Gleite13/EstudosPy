@@ -1,3 +1,5 @@
+# Calculo de PA com for
+
 s = 0
 print('='*30)
 print('         Calculo de PA           ')
