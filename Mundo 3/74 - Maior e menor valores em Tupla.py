@@ -3,7 +3,8 @@
 # Indicar maior e menor da lista
 
 from random import randint
-n = 5
-tupla = ()
-for c in range(0, 11):
-
+tupla = (randint(0, 10), randint(0, 10), randint(0, 10), randint(0, 10), randint(0,10))
+organizado = sorted(tupla)
+print(tupla)
+print(f'O maior número é {organizado[4]}')
+print(f'O menor número é {organizado[0]}')
