@@ -3,6 +3,9 @@
 # para cada palavra, quais são as suas vogais.
 palavras = ('APRENDER', 'PROGRAMAR', 'LINGUAGEM', 'PYTHON', 'CURSO',
             'GRATIS', 'ESTUDAR', 'PRATICAR', 'MERCADO', 'PROGRMADOR', 'FUTURO')
-for vogais in palavras:
-    print(vogais)
-    
+for p in palavras:
+    print(f'\nNa palavra {p} temos ', end='')
+    for letra in p:
+        if letra.lower() in 'aeiouy':
+            print((letra), end=' ')
+
