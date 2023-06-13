@@ -19,6 +19,8 @@ valores.append(5) # adiciona valor 5 a lista
 valores.append(9)
 valores.append(4)
 
+valores.insert(0,'pizza')# irá inserir pizza na pozição zero
+
 for v in valores: #formas de visualizar os valores
     print(f'{v}...', end='')
 
