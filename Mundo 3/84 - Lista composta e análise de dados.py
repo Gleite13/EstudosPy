@@ -19,6 +19,6 @@ while True:
 lista.append(nope[:])
 print(nope)
 print(lista)
-for p in lista:
-    if p[p+1] >= 100:
-        print(p[1])
+print(lista[0][1])
+for p in range(0, len(lista)):
+    print(lista[p][1])
