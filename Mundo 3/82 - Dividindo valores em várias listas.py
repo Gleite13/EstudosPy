@@ -31,7 +31,7 @@ impares = []
 while True:
     num.append(int(input('Digite um número: ')))
     res = str(input('Deseja continuar? [S/N]: '))
-    while res in 'Nn':
+    if res in 'Nn':
         break
 for i, v in enumerate(num): #indice e valor
     if v % 2 == 0:

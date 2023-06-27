@@ -6,6 +6,19 @@
 
 nope = []
 lista = []
-
+pesados = []
+leves = []
 while True:
-    
+    nope.append(str(input('Digite seu nome: ')))
+    nope.append(float(input('Qual o seu peso: ')))
+
+    resp = str(input('Deseja continuar? [S/N]'))
+    if resp in 'Nn':
+        break
+
+lista.append(nope[:])
+print(nope)
+print(lista)
+for p in lista:
+    if p[p+1] >= 100:
+        print(p[1])
