@@ -5,13 +5,14 @@
 # C) Uma listagem com as pessoas mais leves.
 
 lista = []
+dados = []
 pesados = []
 leves = []
 while True:
     nome = str(input('Nome: '))
     peso = float(input('Peso: '))
-    lista.append(nome)
-    lista.append(peso)
+    dados.append(nome)
+    dados.append(peso)
     if peso >= 100:
         pesados.append(peso)
     elif peso <= 70:
@@ -20,9 +21,8 @@ while True:
     if resp in 'Nn':
         break
 
-#lista.append(nope[:])
-
+lista.append(dados[:])
+print(f'Foram Cadastrados {len(lista)} Pessoas')
 print(lista)
-print(lista[0][1])
-print(pesados)
+print(f'{pesados})
 print(leves)
