@@ -4,21 +4,25 @@
 # B) Uma listagem com as pessoas mais pesadas.
 # C) Uma listagem com as pessoas mais leves.
 
-nope = []
 lista = []
 pesados = []
 leves = []
 while True:
-    nope.append(str(input('Digite seu nome: ')))
-    nope.append(float(input('Qual o seu peso: ')))
-
+    nome = str(input('Nome: '))
+    peso = float(input('Peso: '))
+    lista.append(nome)
+    lista.append(peso)
+    if peso >= 100:
+        pesados.append(peso)
+    elif peso <= 70:
+        leves.append(peso)
     resp = str(input('Deseja continuar? [S/N]'))
     if resp in 'Nn':
         break
 
-lista.append(nope[:])
-print(nope)
+#lista.append(nope[:])
+
 print(lista)
 print(lista[0][1])
-for p in range(0, len(lista)):
-    print(lista[p][1])
+print(pesados)
+print(leves)
