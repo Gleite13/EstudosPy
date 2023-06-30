@@ -20,10 +20,11 @@ while True:
     elif peso <= 70:
         leves.append(nome)
         menor = peso
+    dados.clear()
     resp = str(input('Deseja continuar? [S/N]'))
     if resp in 'Nn':
         break
-dados.clear()
+
 lista.append(dados[:])
 print(f'Foram Cadastrados {len(lista)} Pessoas')
 print(f'Os maior peso foi cadastrado foi de {maior}, ácima de 100Kg cadastrados foram: {pesados}')
