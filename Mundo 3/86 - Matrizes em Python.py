@@ -24,4 +24,11 @@ print(f'[ {c[0][0]} ] [ {c[1][0]} ] [ {c[2][0]} ]')
 
 #######################################################
 
-
+matriz = [[0,0,0],[0,0,0],[0,0,0]] # Entrada
+for l in range(0, 3): # L de Linha
+    for c in range(0, 3): # C de coluna
+        matriz[l][c] = int(input(f'Digite um valor para {l} e {c}: ')) # matriz na linha L e na coluna C
+for l in range(0, 3): # Saída
+    for c in range(0, 3):
+        print(f'{matriz[l][c]:^5}', end='')
+    print()
