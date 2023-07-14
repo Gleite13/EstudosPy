@@ -10,17 +10,19 @@ temp = []
 temp2 = []
 todos = 999
 while True:
-    for l in range(0, todos):
-        temp[l].append(str(input('Nome: ')))
-        for c in range(0, 2):
-            temp[c] = int(input(f'Nota {c+1}: '))
-        alunos.append(temp[:])
-        temp.clear()
+    nome = str(input('Nome: '))
+    temp.append(nome)
+    for c in range (1, 3):
+        nota = int(input(f'Nota {c}: '))
+        temp2.append(nota)
+    alunos.append(temp[:])
+    alunos.append(temp2[:])
+    temp.clear()
+    temp2.clear()
     resp = str(input('Deseja continuar? [S/N]: '))
     if resp in 'Nn':
         break
-
-
-
+for l in range(0, len(alunos)):
+    for c in range(0, len(alunos)):
+        print(alunos[l])
 print(alunos)
-print(alunos[l])
