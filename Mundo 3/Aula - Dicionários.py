@@ -83,3 +83,5 @@ for e in brasil:
     for v in e.values():
         print(v, end=' ')
     print()
+
+
