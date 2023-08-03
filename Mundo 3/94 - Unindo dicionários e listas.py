@@ -4,6 +4,7 @@
 
 dicionario = {}
 lista = []
+soma = media = 0
 while True:
     dicionario['nome'] = str(input('Nome: '))
     while True:
@@ -13,6 +14,7 @@ while True:
         else:
             print('ERRO! Por favor, digite apenas M ou F')
     dicionario['idade'] = int(input('Idade: '))
+    soma += dicionario['Idade']
     lista.append(dicionario.copy())
     dicionario.clear
     resp = str(input('Deseja Continuar? [S/N]: '))
@@ -20,6 +22,12 @@ while True:
         break
     elif resp not in 'Ss':
         print('ERRO! Por favor, digite M ou F.')
+media = soma / len(lista)
+print(f'A) Ao todo temos {len(lista)} cadastradas')
+print(f'B) A média de idade é de {media:.2f}')
+for c in lista:
+    for k, v in
 print(dicionario)
 print(lista)
-teste
+
+
