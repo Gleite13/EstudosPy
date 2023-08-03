@@ -4,7 +4,6 @@
 
 dicionario = {}
 lista = []
-temp = []
 while True:
     dicionario['nome'] = str(input('Nome: '))
     while True:
@@ -14,10 +13,8 @@ while True:
         else:
             print('ERRO! Por favor, digite apenas M ou F')
     dicionario['idade'] = int(input('Idade: '))
-    temp.append(dicionario.items()[:])
-    lista.append(temp[:])
-    temp.clear()
-
+    lista.append(dicionario.copy())
+    dicionario.clear
     resp = str(input('Deseja Continuar? [S/N]: '))
     if resp in 'Nn':
         break
