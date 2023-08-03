@@ -22,3 +22,4 @@ while True:
         print('ERRO! Por favor, digite M ou F.')
 print(dicionario)
 print(lista)
+teste
