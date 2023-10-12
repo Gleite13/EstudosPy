@@ -26,6 +26,17 @@ mensagem('Aprenda Python')
 mensagem('Guilherme Leite')
 
 #-----------------------------------------------------
+def escreva(msg):
+    tam = len(msg) + 4 # Ira personalizar qualquer escrita de acordo com o tamanho de msg
+    print('-' * tam)
+    print(f'    {msg}')
+    print('-' * tam)
+
+
+escreva('Ola Mundo!')
+escreva('Erika')
+escreva('Emily')
+#-----------------------------------------------------
 
 def soma(a, b):
     s =  a + b
@@ -91,13 +102,4 @@ so(2, 5, 7, 9)
 
 
 #-----------------------------------------
-def dobra(lst):
-    pos = 0 # Variavel POS na posiçao 0
-    while pos < len(lst): # Enquanto a posição for menor que o tamanho da lista
-        lst[pos] *= 2 # lista na posição atual será o dobro dela
-        pos += 1 # apos executgar essa tarefa vc dobra o valor do vetor
-
-
-valores = [7,2,5,0,4]
-dobra(valores)
-print(valores)
+2
