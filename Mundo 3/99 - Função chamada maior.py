@@ -3,16 +3,24 @@
 # Seu programa tem que analisar todos os valores e dizer qual deles é o maior
 
 from random import randint
-#def maior(a,b,c,d,e,f):
-#      lista = [a,b,c,d,e,f]
-#      maior_valor = max(lista)
-#      return maior_valor
+from time import sleep
 
+def maior(* num):
+    cont = maior = 0
+    for valor in num:
+        if cont == 0:
+            maior = valor
+        else:
+            if valor > maior:
+                maior = valor
 
-#dica do chat GPT /\
+    for c in num:
+        print(f'{c}', end=' ')
+        sleep(0.5)
+        cont += 1
+    print(f'Foram informados {cont} valores')
+    print(f'O maior valor informado foi {maior}')
 
-def maior():
-    for c in range(0,5):
-        print(c)
+maior(2,1,5,6)
 
-print(maior)
+#VER AULA DO EXERCICIO

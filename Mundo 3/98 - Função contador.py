@@ -8,7 +8,8 @@ from time import sleep
 
 
 def texto(txt):
-    print('-' * len(txt))
+    tam = len(txt)
+    print('-' * tam)
     print(txt)
 
 def contador(a, b, c):
@@ -44,3 +45,33 @@ else:
 
 
 # VISUALIZAR VIDEO
+
+def contado(i,f,p):
+    if p < 0:
+        p *= -1
+    if p == 0:
+        p == 1
+    print('-=' * 20)
+    print(f'Contagem de {i} até {f} de {p} em {p}')
+
+    if i < f:
+        cont = i
+        while cont <= i:
+            print(f'{c}', end='')
+            sleep(0.5)
+            cont += p
+        print('FIM!')
+    else:
+        cont = i
+        while cont >= f:
+            print(f'{cont}', end='')
+            cont -= p:
+            print('FIM')
+
+contado(1,10,1)
+contador(10, 0, 2)
+print('Agora é a sua vez de personalizar a contagem')
+ini = int(input('Inicio: '))
+fim = int(input('Fim:    '))
+pas = int(input('Passo:  '))
+contado(ini, fim, passo)
