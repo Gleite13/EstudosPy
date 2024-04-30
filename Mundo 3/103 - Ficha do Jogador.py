@@ -4,7 +4,8 @@
 # mostrar a ficha do jogador, mesmo que algum dado não tenha sido
 # informado corretamente.
 
-
+def ficha(jog='<Desconhecido>', gols=0):
+    print(f'o Jogador {jog} fez {gols} gol(s) no campeonato  ')
 
 n = str(input('Nome do Jogador: '))
 g = str(input('Número de gols: '))
@@ -13,4 +14,6 @@ if g.isnumeric():
 else:
     g = 0
 if n.strip(n) == '':
-    n = ''
+    ficha(gols=g)
+else:
+    ficha(n, g)

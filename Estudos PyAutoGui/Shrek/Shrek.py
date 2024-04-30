@@ -8,3 +8,4 @@ file = open("shrek.txt", "r")
 for word in file:
     pyautogui.typewrite(word)
     pyautogui.press("enter")
+    time.sleep(2)
